@@ -12,9 +12,13 @@ namespace _02_Variables
         {
             // Starta bastığımızda hangi proje çalışsın istiyorsak yukarıdan Extensions altından onun ismi seçilir. Solution Exp. 'da rengi koyu olan çalışacak olan projedir.
             // double değişkeni ondalıklı sayılar için kullanılır.
+
             // nokta olarak kod ekranına yazdığım karakter çalıştırdığımda console ekranında virgül olarak gözükür.
-            // Klavyeden veri girerken noktaya basarsam onu karakter olarak algılar, O yüzden klavyeden ondalılı sayı girilecekse klavyeden virgül girilmeli
+
+            // Klavyeden veri girerken noktaya basarsam onu karakter olarak algılar, O yüzden klavyeden ondalılı sayı girilecekse klavyeden virgül girilmeli.
+
             // Ctrl + space e basarsak bize değişken veya metot isimlerini tamamlama önerileri verir.
+
             // Ctrl + F ye basarsak  bize istediğimiz kelimeyi bulmayı ve istediğimiz kelime ile değiştirme imkanı verir. (yeni kelime yazılıp Replace All seçilir.)
 
             #region Double Değişkenler
@@ -170,7 +174,7 @@ namespace _02_Variables
             #region Klavyeden Karakter Girişleri
 
             char gender;
-            Console.WriteLine("Lütfen Cinsiyet Seçiniz : ");
+            Console.Write("Lütfen Cinsiyet Seçiniz : ");
             gender = char.Parse(Console.ReadLine());
 
             Console.WriteLine("Seçtiğiniz Cinsiyet : " + gender);

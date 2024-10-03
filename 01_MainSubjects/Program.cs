@@ -158,8 +158,8 @@ namespace _01_MainSubjects
             Console.Read(); // Read metodu yazının ekranda görünüp kalmasını sağlar
 
             // Projeyi Github hesabına yüklemek için Solution ismi üzerine sağ tık > Create Git Repository seçilir.
-            // Solution üzerinde ekleme yaparsak bunu güncelemek için yukarıdan View > Git Changes > Push tuşuna basılır.
-            // Solution a yeni proje eklemek için solution üzrine sağ tık > Add New Project ve devamı yapılır.
+            // Solution üzerinde ekleme yaparsak bunu güncelemek için yukarıdan View > Git Changes > Commit All > Commit All and Push tuşuna basılır.
+            // Solution a yeni proje eklemek için solution üzerine sağ tık > Add New Project ve devamı yapılır.
         }
     }
 }
