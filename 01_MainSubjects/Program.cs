@@ -152,12 +152,14 @@ namespace _01_MainSubjects
 
             int totalPrice = totalHamburgerPrice + totalCokePrice + totalWaterPrice + totalFriesprice + totalPizzaprice + totalLemonadePrice;
 
-            Console.WriteLine("Toplam Ödenecek Tutar: " + totalPrice + " TL");           
-
-
+            Console.WriteLine("Toplam Ödenecek Tutar: " + totalPrice + " TL");      
 
             #endregion
             Console.Read(); // Read metodu yazının ekranda görünüp kalmasını sağlar
+
+            // Projeyi Github hesabına yüklemek için Solution ismi üzerine sağ tık > Create Git Repository seçilir.
+            // Solution üzerinde ekleme yaparsak bunu güncelemek için yukarıdan View > Git Changes > Push tuşuna basılır.
+            // Solution a yeni proje eklemek için solution üzrine sağ tık > Add New Project ve devamı yapılır.
         }
     }
 }
