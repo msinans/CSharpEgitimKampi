@@ -177,6 +177,16 @@ namespace _04_Loops
             int number = int.Parse(Console.ReadLine());
             int ones, tens, hundreds, sum;
 
+            ones = number % 10;
+            tens = (number % 100) / 10;
+            hundreds = number / 100; // int kullandığımızdan yüzler basamağından sonraki kısım virgülden sonra kalacağından onu dikkate almaz
+            
+            Console.WriteLine("Bu sayının basamakları: " + ones +  "-" + tens + "-" + hundreds);
+
+            sum = ones + tens + hundreds;
+
+
+            Console.WriteLine("Bunların toplamı: " + sum);
 
 
 
