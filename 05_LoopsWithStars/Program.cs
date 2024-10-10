@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,14 +41,63 @@ namespace _05_LoopsWithStars
 
             #region Dik Üçgen
 
-            for (int i = 1; i <= 5; i++)
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Ters Dik Üçgen
+
+            //for (int i = 5; i >= 1; i--)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Dik ve Ters Dik Üçgen Beraber
+
+
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //for (int k = 4; k >= 1; k--)
+            //{
+            //    for (int m = 1; m <= k; m++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Baklava Dilimi
+
+            int n = 5;
+            for (int i = 1; i <= n; i++)
             {
-                for (int j = 1; j <= i; j++)
+                for (int j = n -1; j >0; j--)
                 {
-                    Console.Write("*");
+
                 }
-                Console.WriteLine();
             }
+
 
             #endregion
 
