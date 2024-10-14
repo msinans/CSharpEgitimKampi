@@ -140,6 +140,58 @@ namespace _06_Arrays
 
             #region
 
+            //string[] cities = new string[5];
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.Write($"Lütfen {i + 1}. Şehri Giriniz: "); // $ sembolü sayesinde "" içini tekrar yazmama gerek kalmıyor. Tırnaklar içini ve dışını beraber yazabiliyorum.
+            //    cities[i] = Console.ReadLine();                     
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine( "---------------------------- ");
+
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.WriteLine(cities[i]);
+            //}
+            #endregion
+
+            #region Bir Tam Sayı Dizisi Oluşturup Toplamlarını Bulma
+
+            //int[] numbers = { 10, 20, 30, 40, 50  };
+            //int sum = 0;
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+            //Console.WriteLine(sum);
+
+            #endregion
+
+            #region Dizideki Tek Çift Sayıları Ayrı Ayrı Listeleme
+
+            int[] numbers = { 11, 23, 34, 45, 56, 67, 78, 89, 90, 110 };
+
+            Console.WriteLine("Dizideki Çift Sayılar: ");
+            Console.WriteLine();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
+
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Dizideki Tek Sayılar: ");
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
 
             #endregion
             Console.Read();
