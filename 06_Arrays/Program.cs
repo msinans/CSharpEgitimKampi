@@ -121,8 +121,24 @@ namespace _06_Arrays
             //{
             //    Console.WriteLine(numbers[i]);
             //}
+            #endregion
 
             #region Dizi Metotlarından IndexOf (istediğmiz elemanın indeks sırasını verir)
+
+            //string[] customers = { "Ali", "Can", "İsa", "Joe", "Moe", "Sin", "Tin" };
+            //int index = Array.IndexOf(customers, "İsa"); // Buradaki isimde büyük küçük harf yukarıdaki ile aynı olmalı
+
+            //Console.WriteLine(index);
+
+            #endregion
+
+            #region
+            //int[] numbers = { 1, 2, 39, 9848, 848484, 399495, 0283647, 123456789, -3 };
+            //Console.WriteLine("Dizinin en büyük elemanı: " + numbers.Max() + " Dizinin en küçük elemanı: " + numbers.Min());
+
+            #endregion
+
+            #region
 
 
             #endregion
