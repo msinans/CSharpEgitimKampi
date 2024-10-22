@@ -12,7 +12,7 @@ namespace _08_Methods
         // Metodu yazıp onu metot dşından çağırmak gerek
         // İki tür metot vardır;
         // 1 - Void (Geriye değer döndürmeyen metotlar)
-        //     Geriye değer döndürmeyen metotlar, beli işlemleri tekrar tekrar yazmamızı gerek                   bırakmadığından için faydalıdır.
+        //     Geriye değer döndürmeyen metotlar, beli işlemleri tekrar tekrar yazmamızı gerek                   bırakmadığı için faydalıdır.
 
         // 2 - Geriye Değer Döndüren Metotlar
         //     Bunlar geriye bir değer, değişken, liste vs. döndürür.
@@ -30,7 +30,6 @@ namespace _08_Methods
             //    Console.WriteLine("Veli Can");
             //    Console.WriteLine("Deli Can");
             //    Console.WriteLine();
-
             //}
             //customerList(); // Metodu yazıp onu metot dşından çağırmak gerek
             //customerList();
