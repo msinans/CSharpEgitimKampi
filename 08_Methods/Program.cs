@@ -95,6 +95,8 @@ namespace _08_Methods
 
             //Console.WriteLine(studentCard());
 
+            #endregion
+
             #region Geriye Değer Döndüren String Parametreli Metotlar
 
             //string countryCard(string countryName, string capital, string flagColor)
@@ -120,17 +122,34 @@ namespace _08_Methods
 
             #region Geriye Değer Döndüren Int Parametreli Metotlar
 
-            int sum (int number1 , int number2)
-            {
-                int result = number1 + number2;
-                return result;
-            }
-            Console.WriteLine(sum(45, 90));
-            Console.WriteLine(sum(55, 100));
-            Console.WriteLine(sum(65, 110));
-            Console.WriteLine(sum(75, 120));
-
+            //int sum (int number1 , int number2)
+            //{
+            //    int result = number1 + number2;
+            //    return result;
+            //}
+            //Console.WriteLine(sum(45, 90));
+            //Console.WriteLine(sum(55, 100));
+            //Console.WriteLine(sum(65, 110));
+            //Console.WriteLine(sum(75, 120));
             #endregion
+
+            #region Örnek Uygulama
+
+            string examResult (string studentName, int exam1, int exam2, int exam3)
+            {
+                int result = (exam1 + exam2 + exam3) / 3 ;
+                if (result >= 50)
+                {
+                    return studentName + " isimli öğrenci sınavı geçti. " + "Sınav ortalaması: " + result;
+                }
+                else
+                {
+                    return studentName +" isimli öğrenci sınavı geçemedi. " + "Sınav ortalaması: " + result;
+                }
+            }
+            Console.WriteLine(examResult("Jo Johnson", 33, 45, 67));
+            Console.WriteLine(examResult("Bo Johnson", 66, 44, 11));
+            Console.WriteLine(examResult("Jo James", 45, 78, 100));            
 
 
             #endregion
