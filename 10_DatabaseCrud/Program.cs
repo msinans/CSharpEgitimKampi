@@ -90,20 +90,22 @@ namespace _10_DatabaseCrud
 
             #region Ürün Silme İşlemi
 
-            Console.Write("Silinecek Ürün Id: ");
+            //Console.Write("Silinecek Ürün Id: ");
 
-            int productId = int.Parse(Console.ReadLine());
+            //int productId = int.Parse(Console.ReadLine());
 
-            SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; initial catalog = EgitimKampiDb; integrated security = true");
-            connection.Open();
-            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId = @productId", connection);    
-            command.Parameters.AddWithValue("@productId", productId);
-            command.ExecuteNonQuery();
+            //SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; initial catalog = EgitimKampiDb; integrated security = true");
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId = @productId", connection);    
+            //command.Parameters.AddWithValue("@productId", productId);
+            //command.ExecuteNonQuery();
 
-            connection.Close();
-            Console.WriteLine("Silme işlemi gerçekleşti");
+            //connection.Close();
+            //Console.WriteLine("Silme işlemi gerçekleşti");
 
+            #endregion
 
+            #region
 
             #endregion
 
