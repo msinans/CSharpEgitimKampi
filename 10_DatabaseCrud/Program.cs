@@ -96,11 +96,12 @@ namespace _10_DatabaseCrud
 
             SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; initial catalog = EgitimKampiDb; integrated security = true");
             connection.Open();
-            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId = @productId");    
-
-
+            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId = @productId", connection);    
+            command.Parameters.AddWithValue("@productId", productId);
+            command.ExecuteNonQuery();
 
             connection.Close();
+            Console.WriteLine("Silme işlemi gerçekleşti");
 
 
 
