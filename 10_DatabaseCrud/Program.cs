@@ -105,7 +105,29 @@ namespace _10_DatabaseCrud
 
             #endregion
 
-            #region
+            #region Ürün Güncelleme İşlemi
+
+            Console.Write("Güncellenecek Ürün Id: ");
+            int productId = int.Parse(Console.ReadLine());
+
+            Console.Write("Güncellenecek Ürün Adı: ");
+            string productName = Console.ReadLine();
+
+            Console.Write("Güncellenecek Ürün Fyatı: ");
+            decimal productPrice = decimal.Parse(Console.ReadLine());
+
+            SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; initial catalog = EgitimKampiDb; integrated security = true");
+            connection.Open();
+            SqlCommand command = new SqlCommand("Update TblProduct Set ProductName = @productName, ProductPrice = @productPrice Where productId = @productId", connection); // Where şartını yazmazsak bütün kayıtları günceller
+            command.Parameters.AddWithValue("@productName", productName);
+            command.Parameters.AddWithValue("@productPrice", productPrice);
+            command.Parameters.AddWithValue("@productId", productId);
+            command.ExecuteNonQuery();
+
+            connection.Close();
+
+            Console.WriteLine("Güncelleme Başarılı!");
+
 
             #endregion
 
